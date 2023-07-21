@@ -15,10 +15,13 @@ class Title extends react.Component {
         console.log(this.state.find)
 
     }
-    getdata=()=>{
+    componentDidMount(){
+        
+    }
+   getdata=async()=>{
         let apikey="887f8d8fbed04628be085053231007";
         let locationfind=this.state.find;
-        axios.get(`http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${locationfind}`).then((res)=>{
+       await axios.get(`http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${locationfind}`).then((res)=>{
             let location=res.data.location;
             let cur=res.data.current;
             this.setState({celsius:cur.temp_c,fehrenheit:cur.temp_f,city:location.name,region:location.region,country:location.country,isNull:false,Windkm:cur.wind_kph,Windmph:cur.wind_mph,time:location.localtime,heightvh:"100vh"
