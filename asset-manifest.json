@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/Weather-Website/static/js/main.d10d065b.js",
+    "static/js/787.0e31295a.chunk.js": "/Weather-Website/static/js/787.0e31295a.chunk.js",
+    "index.html": "/Weather-Website/index.html",
+    "main.d10d065b.js.map": "/Weather-Website/static/js/main.d10d065b.js.map",
+    "787.0e31295a.chunk.js.map": "/Weather-Website/static/js/787.0e31295a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d10d065b.js"
+  ]
+}
